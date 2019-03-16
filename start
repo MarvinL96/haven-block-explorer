@@ -1,0 +1,6 @@
+#!/bin/bash
+havend --out-peers 64 --add-peer 165.227.51.19 --add-peer 138.68.188.132 --add-peer 45.55.31.18 --detach
+sleep 30
+cd /src/haven-block-explorer/build
+./xmrblocks -b /root/.haven/lmdb/ -d http://127.0.0.1:17750 --enable-emission-monitor=1
+
