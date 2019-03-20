@@ -86,7 +86,7 @@ RUN git clone https://github.com/jedisct1/libsodium.git -b ${SODIUM_VERSION} \
     && make install
 
 WORKDIR /src
-ENV HAVEN_VERSION=3.2.1
+ENV HAVEN_VERSION=3.2.2
 RUN git clone https://github.com/haven-protocol-org/haven-legacy.git -b $HAVEN_VERSION 
 
 ARG NPROC
